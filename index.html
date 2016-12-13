@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>印象宝玉</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			html,body{
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="shou-body-phone">
+			<div class="row row1">
+				<div class="col-xs-8 row1_1"><img src="img/shouyejiaodian.png"/></div>
+				<div class="col-xs-4 row1_2">
+					<div>
+						<img src="img/yujian.png"/>
+						<img src="img/logo-white.png"/>
+						<span>玉石奢瓷呈献</span>
+					</div>
+					<div>
+						<img src="img/mingyugujin.png"/>
+						<span>工匠精神传承千年</span>
+					</div>
+				</div>
+			</div>
+			<div class="row row2">
+				<div class="col-xs-4 row2_1">
+					<div class="row2_1_1">
+						<span>了解活动的最新动态</span>
+						<img src="img/yujianxindong.png"/>
+					</div>
+				</div>
+				<div class="col-xs-4 row2_2">
+					<div class="row2_2_1">
+						<img src="img/yujianjingcai.png"/>
+						<span>精彩回顾与花絮</span>
+						<span class="iconfonts">&#xe6ac;</span>
+					</div>
+				</div>
+				<div class="col-xs-4 row2_3">
+					<div class="row2_3_1">
+						<img src="img/yujiaqinzheng.png"/>
+						<span>了解详尽的观演方式</span>
+					</div>
+				</div>
+			</div>
+			<div class="logo-zi">
+				<img src="img/logo-zi.png"/>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		if (window.navigator.userAgent.indexOf("Mobile") <= -1) {//MicroMessenger
+//			location.href = "wxindex.html";
+			location.href = "moindex.html";
+		}else{
+			$("#shou-body-phone").css("display","block");
+		}
+		var row1_2_div1 = document.getElementsByClassName("row1_2")[0].getElementsByTagName("div")[0];//玉见欧神诺
+		var row1_2_div2 = document.getElementsByClassName("row1_2")[0].getElementsByTagName("div")[1];//名玉古今
+		var row2_1 = document.getElementsByClassName("row2_1")[0];//玉见新动
+		var row2_2 = document.getElementsByClassName("row2_2")[0];//玉见精彩
+		var row2_3 = document.getElementsByClassName("row2_3")[0];//玉驾亲征
+		row1_2_div1.onclick = function () {
+			location.href = "yujianoushennuo.html";
+		}
+		row1_2_div2.onclick = function () {
+			location.href = "mingyugujin.html";
+		}
+		row2_1.onclick = function () {
+			location.href = "yujianxindong-1.html";
+		}
+		row2_2.onclick = function () {
+			location.href = "yujianjingcai.html";
+		}
+		row2_3.onclick = function () {
+			location.href = "yujiaqinzheng.html";
+		}
+	</script>
+</html>

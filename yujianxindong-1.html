@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>玉见新动</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<style type="text/css">
+			html,body{
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="yujianxindong-body-1">
+			<div id="header">
+				<div>玉见新动</div>
+				<span class="iconfonts">&#xe62a;</span>
+			</div>
+			<div class="xindong-body-1">
+				<div class="xindong-biaoti">
+					<img src="img/yujianxindong-biaoti-txt.png"/>
+				</div>
+				<div class="xindong-shen-xian">
+					<div class="xindong-shen-nei">
+						<div class="xindong-shen">
+							<img src="img/xindong-tu-1.png" class="xindong-shen-1-1"/>
+							<div class="xindong-shen-1-2">
+								<div class="xindong-shen-1-2-1">欧神诺陶瓷“猎豹联动”山东站开年大作圆满收官</div>
+								<div class="xindong-shen-1-2-2">
+									<span>查看详情</span>
+									<span>2016-03-18</span>
+								</div>
+							</div>
+						</div>
+						<hr/>
+						<div class="xindong-shen">
+							<img src="img/xindong-tu-2.png" class="xindong-shen-1-1"/>
+							<div class="xindong-shen-1-2">
+								<div class="xindong-shen-1-2-1">景德镇欧神诺奢瓷体验馆重装开业 斩获60多单</div>
+								<div class="xindong-shen-1-2-2">
+									<span>查看详情</span>
+									<span>2016-03-18</span>
+								</div>
+							</div>
+						</div>
+						<hr/>
+						<div class="xindong-shen">
+							<img src="img/xindong-tu-1.png" class="xindong-shen-1-1"/>
+							<div class="xindong-shen-1-2">
+								<div class="xindong-shen-1-2-1">欧神诺陶瓷“猎豹联动”山东站开年大作圆满收官</div>
+								<div class="xindong-shen-1-2-2">
+									<span>查看详情</span>
+									<span>2016-03-18</span>
+								</div>
+							</div>
+						</div>
+						<hr/>
+						<div class="xindong-shen">
+							<img src="img/xindong-tu-2.png" class="xindong-shen-1-1"/>
+							<div class="xindong-shen-1-2">
+								<div class="xindong-shen-1-2-1">景德镇欧神诺奢瓷体验馆重装开业 斩获60多单</div>
+								<div class="xindong-shen-1-2-2">
+									<span>查看详情</span>
+									<span>2016-03-18</span>
+								</div>
+							</div>
+						</div>
+						<hr/>
+						<div class="xindong-shen">
+							<img src="img/xindong-tu-1.png" class="xindong-shen-1-1"/>
+							<div class="xindong-shen-1-2">
+								<div class="xindong-shen-1-2-1">欧神诺陶瓷“猎豹联动”山东站开年大作圆满收官</div>
+								<div class="xindong-shen-1-2-2">
+									<span>查看详情</span>
+									<span>2016-03-18</span>
+								</div>
+							</div>
+						</div>
+						<hr/>
+						<div class="xindong-shen">
+							<img src="img/xindong-tu-2.png" class="xindong-shen-1-1"/>
+							<div class="xindong-shen-1-2">
+								<div class="xindong-shen-1-2-1">景德镇欧神诺奢瓷体验馆重装开业 斩获60多单</div>
+								<div class="xindong-shen-1-2-2">
+									<span>查看详情</span>
+									<span>2016-03-18</span>
+								</div>
+							</div>
+						</div>
+						<br/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/yinxiangmeiyu.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.onload = function () {
+				var xindong_body_1 = document.getElementsByClassName("xindong-body-1")[0];
+				var xindong_biaoti = document.getElementsByClassName("xindong-biaoti")[0];
+				var xindong_shen_xian = document.getElementsByClassName("xindong-shen-xian")[0];
+				xindong_shen_xian.style.height = xindong_body_1.offsetHeight - xindong_biaoti.offsetHeight + 10 + "px";
+				$(".xindong-shen-1-2").css("height",$(".xindong-shen-1-1").height() + "px");
+			}
+			$(".xindong-shen-1-2-2 span").click(function () {
+				location.href = 'yujianxindong-2.html';
+			})
+		</script>
+	</body>
+</html>

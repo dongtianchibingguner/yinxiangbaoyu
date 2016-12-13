@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>玉见欧神诺</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<style type="text/css">
+			html,body{
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="yujianoushennuo-body">
+			<div id="header">
+				<div>玉见欧神诺</div>
+				<span class="iconfonts">&#xe62a;</span>
+			</div>
+			<div class="xindong-body-1 oushennuo-shen-1">
+				<div class="xindong-biaoti oushennuo-shen-1-1">
+					<img src="img/oushennuo-txt.png"/>
+				</div>
+				<div class="xindong-shen-xian oushennuo-shen-1-2">
+					<div class="xindong-shen-nei oushennuo-shen-1-2-1">
+						<div class="oushennuo-shen-1-2-1-1">
+							<img src="img/honghuabaiyu.png"/>
+							<div>
+								<h3>ICB00280P红花白玉</h3>
+								<span>纹如凝脂，红中裹白，白里透红，突显美玉中的珍品色相。来自伊朗珍稀名品红花白玉，结合先进的玉纹封印技术，微晶材料预烧，釉色素整体结合，三次烧成。IC微晶红花白玉，不仅仅是还原珍玉的原始风貌，在韵意及色彩变化上更显创新，隽永脱俗，时尚自然。</span>
+							</div>
+						</div>
+						<hr/>
+						<div class="oushennuo-shen-1-2-1-2">
+							<img src="img/yuebaiyu-1.png"/>
+							<div>
+								<h3>ICB10280P月白玉</h3>
+								<span>清新温润的质感，清雅飘逸的色彩，细腻别致的纹理，彰显镂月裁云般的美感。高贵大方，典雅脱俗，散发着一种低调的奢华气质。IC微晶米玉，创意于加拿大珍稀名玉，纯净的白玉经过抛晶工艺的打造，仿佛水中之月，宁静可人。 </span>
+							</div>
+						</div>
+						<hr/>
+						<div class="oushennuo-shen-1-2-1-3">
+							<img src="img/yuebaiyu-2.png"/>
+							<div>
+								<h3>ICB10280P月白玉</h3>
+								<span>砖面色彩流动自然感人，丝丝纹理细腻别致，仿佛山间淌淌流水，内敛而不张扬。创意于意大利珍稀名玉，清朗的色泽尽显时尚优雅，触感温润和谐。如淡淡芳香，盈盈微风，令人陶醉。</span>
+							</div>
+						</div>
+						<br/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/yinxiangmeiyu.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.onload = function () {
+				var xindong_body_1 = document.getElementsByClassName("xindong-body-1")[0];
+				var xindong_biaoti = document.getElementsByClassName("xindong-biaoti")[0];
+				var xindong_shen_xian = document.getElementsByClassName("xindong-shen-xian")[0];
+				xindong_shen_xian.style.height = xindong_body_1.offsetHeight - xindong_biaoti.offsetHeight + "px";
+			}
+		</script>
+	</body>
+</html>

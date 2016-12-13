@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			html,body{
+				width: 100%;
+				position: relative;
+			}
+			
+			#body img{
+				width: 20%;
+				display: block;
+				margin: 50px auto;
+			}
+			#body div{
+				width: 100%;
+				font-size: 30px;
+				text-align: center;
+			}
+			#body-1{
+				display: none;
+			}
+			#body-1 img{
+				width: 10%;
+				display: block;
+				margin: 100px auto;
+			}
+			#body-1 div{
+				width: 100%;
+				font-size: 30px;
+				text-align: center;
+			}
+			p{
+				width: 100%;
+				text-align: center;
+				margin: 18px 0px;
+			}
+			span{
+				width: 100%;
+				font-size: 18px;
+				text-align: center;
+			}
+			a{
+				font-size: 16px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="body">
+			<img src="img/weixin.png"/>
+			<div>请在微信客户端打开此网页</div>
+			<p>
+				<span>如需安装</span>
+				<a href="###">点此下载</a>
+			</p>
+		</div>
+		<div id="body-1">
+			<img src="img/AppStore.png"/>
+			<div>请前往AppStore中下载</div>
+		</div>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var a = document.getElementsByTagName("a")[0];
+			a.onclick = function () {
+				if (window.navigator.userAgent.indexOf("Android") > -1) {
+					location.href = "http://dldir1.qq.com/weixin/android/weixin6331android940.apk";
+				}else if (window.navigator.userAgent.indexOf("iPad") > -1 || window.navigator.userAgent.indexOf("iPhone") > -1) {
+					$("#body").css("display","none");
+					$("#body-1").css("display","block");
+				}else{
+					location.href = "/cgi-bin/readtemplate?uin=&stype=&promote=&fr=&lang=zh_CN&ADTAG=&check=false&nav=download&t=weixin_download_list&loc=readtemplate,weixin,body,6";
+				}
+			}
+		</script>
+	</body>
+</html>

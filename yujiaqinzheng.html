@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>玉驾亲征</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<style type="text/css">
+			html,body{
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="yujiaqinzheng-body">
+			<div id="header">
+				<div>玉驾亲征</div>
+				<span class="iconfonts">&#xe62a;</span>
+			</div>
+			<div class="xindong-body-1 qinzheng-body-1">
+				<div class="xindong-biaoti qinzheng-body-1-1">
+					<img src="img/yujiaqinzheng-txt.png"/>
+				</div>
+				<div class="xindong-shen-xian qinzheng-body-1-2">
+					<div class="xindong-shen-nei qinzheng-body-1-2-1">
+						<img src="img/qinzheng-tu.png"/>
+						<div>欧神诺“印象宝玉”舞台剧正式开演啦，通过以下方式可直达演播会场：</div>
+						<div>1、在欧神诺公众号留言“报名”</div>
+						<div>2、在欧神诺门店报名</div>
+						<div>约距今七千至四千年间的新石器时代晚期，掌祭祀大权者，用美玉制作「祭器」礼拜祖先。他们相信氏族远祖的生命，是经由神物源自上帝，便在玉器上雕饰想像中神祗祖先的形貌，甚至刻绘极具深义的符号，以礼拜之。希望藉玉器特有的质地、造形、花纹与符号，产生感应的法力，与神祗祖先沟通，汲取他们的智慧，获得福庇。</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/yinxiangmeiyu.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.onload = function () {
+				var xindong_body_1 = document.getElementsByClassName("xindong-body-1")[0];
+				var xindong_biaoti = document.getElementsByClassName("xindong-biaoti")[0];
+				var xindong_shen_xian = document.getElementsByClassName("xindong-shen-xian")[0];
+				xindong_shen_xian.style.height = xindong_body_1.offsetHeight - xindong_biaoti.offsetHeight + 30 + "px";
+			}
+		</script>
+	</body>
+</html>

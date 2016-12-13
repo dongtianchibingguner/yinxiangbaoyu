@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>玉见精彩</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<style type="text/css">
+			html,body{
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="yujianjingcai-body">
+			<div id="header">
+				<div>玉见精彩</div>
+				<span class="iconfonts">&#xe62a;</span>
+			</div>
+			<div class="mingyu-body jingcai-body xindong-body-1">
+				<div class="jingcai-1">
+					<img src="img/jingcai-txt.png"/>
+				</div>
+				<div class="xindong-shen-xian jingcai-2">
+					<div class="xindong-shen-nei jingcai-nei">
+						<div class="jingcai-2-1">
+							<div class="jingcai-2-1-1">
+								<span class="iconfonts">&#xe6ac;</span>
+							</div>
+							<div class="jingcai-2-1-2">欧神诺陶“猎豹联动”山东站开年大作圆满收官</div>
+							<video width="" height="" class="jingcai-2-1-3" controls="controls" preload>
+								<source src="vadio/曝光的面膜.mp4" type="video/mp4"></source>
+								<object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+									<param name="movie" value="myvideo.swf" />
+									<param name="flashvars" value="autostart=true&amp;file=myvideo.swf" />
+								</object>
+							</video>
+						</div>
+						<hr/>
+						<div class="jingcai-2-1">
+							<div class="jingcai-2-1-1">
+								<span class="iconfonts">&#xe6ac;</span>
+							</div>
+							<div class="jingcai-2-1-2">欧神诺陶“猎豹联动”山东站开年大作圆满收官</div>
+							<!--<embed src='http://player.youku.com/player.php/sid/XMzk1NjM1MjAw/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>-->
+							<video width="" height="" class="jingcai-2-1-3" controls="controls" preload>
+								<source src="vadio/曝光的面膜.mp4" type="video/mp4"></source>
+								<object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+									<param name="movie" value="myvideo.swf" />
+									<param name="flashvars" value="autostart=true&amp;file=myvideo.swf" />
+								</object>
+							</video>
+						</div>
+						<br/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/yinxiangmeiyu.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.onload = function () {
+				var mingyu_body = document.getElementsByClassName("mingyu-body")[0];
+				mingyu_body.style.marginTop = header_height + "px";
+				var xindong_body_1 = document.getElementsByClassName("xindong-body-1")[0];
+				var jingcai_biaoti = document.getElementsByClassName("jingcai-1")[0];
+				var xindong_shen_xian = document.getElementsByClassName("xindong-shen-xian")[0];
+				xindong_shen_xian.style.height = xindong_body_1.offsetHeight - jingcai_biaoti.offsetHeight + 10 + "px";
+				var jingcai_2_1_1 = document.getElementsByClassName("jingcai-2-1-1");
+				var jingcai_2_1_3 = document.getElementsByClassName("jingcai-2-1-3");
+				var jingcai_2_1_4 = document.getElementsByClassName("jingcai-2-1-4")[0];
+				for (var i = 0;i < jingcai_2_1_1.length;i++) {
+					jingcai_2_1_1[i].index = i;
+					jingcai_2_1_1[i].onclick = function () {
+						jingcai_2_1_1[this.index].style.display = "none";
+						jingcai_2_1_3[this.index].style.display = "block";
+//						jingcai_2_1_4.style.display = "block";
+					}
+				}
+			}
+		</script>
+	</body>
+</html>
